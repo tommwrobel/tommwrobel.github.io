@@ -1,19 +1,35 @@
 $(document).ready(function() {
-	var max_fields      = 10; //maximum input boxes allowed
 	var wrapper   		= $(".container form");
-    var elementToAppend = $(".links-wrapper div:first-child");
-
-	var x = 1; //initlal text box count
-	$(wrapper).on("click",".add-link-button", function(e){ //on add input button click
+    var elementToAppend = $("#link-container-template");
+    var id = 1;
+    var num = 1;
+    
+    //add
+	$(wrapper).on("click",".add-link-button", function(e){
 		e.preventDefault();
-		x++;
-        $(".links-wrapper").append($(elementToAppend).wrap("<p>").parent().html()); 
-        $(elementToAppend).unwrap();
-        
+
+        $(".links-wrapper").append($(elementToAppend).html());
+
+        $(".links-wrapper .link-container:last-child .link-number").text(num);
+        $(".links-wrapper .link-container:last-child .color-radio-input").each(function() {
+            $(this).attr("name", "col" + id);
+        });
+
+        id++;
+        num++;
 	});
 
+    //remove
 	$(wrapper).on("click",".remove_field_button", function(e){
-		e.preventDefault(); $(this).parent('div').parent('div').remove(); x--;
+        e.preventDefault(); 
+        $(this).parent('div').parent('div').remove();
+
+        num--;
+        var number = 1;
+        $(".links-wrapper .link-number").each(function() {
+            $(this).text(number);
+            number++;
+        });
     });
 
 

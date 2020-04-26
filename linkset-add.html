@@ -24,13 +24,13 @@
             <div class="row px-3">
                 <nav class="navbar" role="navigation" aria-label="main navigation">
                     <div class="navbar-brand">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="img/linkset-logo.svg" alt="logo"/>
                         </a>
                     </div>
                     <div class="navbar-links">
-                        <a class="btn btn-tertiary color-white" href="#about-project-anchor">About</a>
-                        <a class="btn btn-tertiary color-white" href="#contact-me-anchor">Contact</a>
+                        <a class="btn btn-tertiary color-white" href="index.html#about-project-anchor">About</a>
+                        <a class="btn btn-tertiary color-white" href="index.html#contact-me-anchor">Contact</a>
                     </div>
                 </nav>
             </div>
@@ -42,7 +42,46 @@
    <section class="subpage-content padding-bottom-5">
         <div class="container py-5 px-3 px-sm-5">
 
-            <h2 class="mb-5">Create new Linkset</h2>
+            <h2 class="mb-5 text-md-center">Create new Linkset</h2>
+
+            <div id="link-container-template" class="d-none">
+            <div class="link-container">
+
+                <!--navigation+close buttons-->
+                    <div class="link-container-buttons">
+                        <a class="btn-icon btn-red remove_field_button"><img src="img/x.svg" alt="x"/></a>
+                    </div>
+
+                    
+                    <div class="row">
+                        <div class="col-12 col-md-7">
+                            <label for="linkUrl">#<span class="link-number">0</span> Link URL:</label>
+                            <input type="text" name="linkUrl"/>
+                        </div>
+
+                        <div class="col-12 col-md-5">
+                            <label for="linkUrl">Link label:</label>
+                            <div class="link-label-color-options">
+                                <label class="color-radio_container">
+                                    <input type="radio" checked="checked" name="col0" class="color-radio-input bg-green">
+                                    <span class="checkmark bg-green"></span>
+                                </label>
+                                <label class="color-radio_container">
+                                    <input type="radio" name="col0" class="color-radio-input bg-yellow">
+                                    <span class="checkmark bg-yellow"></span>
+                                </label>
+                                <label class="color-radio_container">
+                                    <input type="radio" name="col0" class="color-radio-input  bg-red">
+                                    <span class="checkmark bg-red"></span>
+                                </label>
+                            </div>
+                            <input type="text" name="linkLabel"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <form>
                 <div class="linkset-container">
                     <label for="linksetName">Linkset name:</label>
@@ -50,40 +89,7 @@
                 </div>
                 <div class="links-wrapper">
 
-                    <div class="link-container">
-
-                        <!--navigation+close buttons-->
-                        <div class="link-container-buttons">
-                            <a class="btn-icon btn-red remove_field_button"><img src="img/x.svg" alt="x"/></a>
-                        </div>
-
-                        
-                        <div class="row">
-                            <div class="col-12 col-md-7">
-                                <label for="linkUrl">#1 Link URL:</label>
-                                <input type="text" name="linkUrl"/>
-                            </div>
-
-                            <div class="col-12 col-md-5">
-                                <label for="linkUrl">Link label (optional):</label>
-                                <div class="link-label-color-options">
-                                    <label class="color-radio_container">
-                                        <input type="radio" checked="checked" name="label-color" class="bg-green">
-                                        <span class="checkmark bg-green"></span>
-                                    </label>
-                                    <label class="color-radio_container">
-                                        <input type="radio" name="label-color" class="bg-yellow">
-                                        <span class="checkmark bg-yellow"></span>
-                                    </label>
-                                    <label class="color-radio_container">
-                                        <input type="radio" name="label-color" class="bg-red">
-                                        <span class="checkmark bg-red"></span>
-                                    </label>
-                                </div>
-                                <input type="text" name="linkLabel"/>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                 </div>
 
