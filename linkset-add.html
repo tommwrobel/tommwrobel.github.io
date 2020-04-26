@@ -39,20 +39,19 @@
      <!--navigation-end-->
 
    <!--content-->
-   <section class="subpage-content padding-bottom-5">
+   <section class="subpage-content pb-4">
         <div class="container py-5 px-3 px-sm-5">
 
             <h2 class="mb-5 text-md-center">Create new Linkset</h2>
 
+             <!--template-->
             <div id="link-container-template" class="d-none">
-            <div class="link-container">
+                <div class="link-container">
 
-                <!--navigation+close buttons-->
                     <div class="link-container-buttons">
                         <a class="btn-icon btn-red remove_field_button"><img src="img/x.svg" alt="x"/></a>
                     </div>
 
-                    
                     <div class="row">
                         <div class="col-12 col-md-7">
                             <label for="linkUrl">#<span class="link-number">0</span> Link URL:</label>
@@ -60,17 +59,15 @@
                         </div>
 
                         <div class="col-12 col-md-5">
-                            <label for="linkUrl">Link label:</label>
+                            <label for="linkUrl">Link label(optional):</label>
                             <div class="link-label-color-options">
                                 <label class="color-radio_container">
                                     <input type="radio" checked="checked" name="col0" class="color-radio-input bg-green">
                                     <span class="checkmark bg-green"></span>
-                                </label>
-                                <label class="color-radio_container">
+                                </label><label class="color-radio_container">
                                     <input type="radio" name="col0" class="color-radio-input bg-yellow">
                                     <span class="checkmark bg-yellow"></span>
-                                </label>
-                                <label class="color-radio_container">
+                                </label><label class="color-radio_container">
                                     <input type="radio" name="col0" class="color-radio-input  bg-red">
                                     <span class="checkmark bg-red"></span>
                                 </label>
@@ -95,10 +92,10 @@
 
                 <div class="link-container add-link-button">
                     <img src="img/plus.svg" alt="" />
-                    <span>Add one more link</span>
+                    <span>Add link</span>
                 </div>
 
-                <div class="row txt-center margin-top-5">
+                <div class="row txt-center mt-5">
                     <div class="col">
                         <input type="submit" class="btn btn-primary" value="Create Linkset!" />
                     </div>

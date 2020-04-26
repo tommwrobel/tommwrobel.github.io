@@ -202,138 +202,7 @@ h2 {
 	text-align: left;
 }
 
-
 /*colors-text-end*/
-
-
-/*margins-paddings*/
-
-.margin-1 {
-	margin: calc(var(--margin-root) * 1);
-}
-
-.margin-2 {
-	margin: calc(var(--margin-root) * 2);
-}
-
-.margin-3 {
-	margin: calc(var(--margin-root) * 3);
-}
-
-.margin-4 {
-	margin: calc(var(--margin-root) * 4);
-}
-
-.margin-5 {
-	margin: calc(var(--margin-root) * 5);
-}
-
-.margin-10 {
-	margin: calc(var(--margin-root) * 10);
-}
-
-.margin-bottom-1 {
-	margin-bottom: calc(var(--margin-root) * 1);
-}
-
-.margin-bottom-2 {
-	margin-bottom: calc(var(--margin-root) * 2);
-}
-
-.margin-bottom-3 {
-	margin-bottom: calc(var(--margin-root) * 3);
-}
-
-.margin-bottom-4 {
-	margin-bottom: calc(var(--margin-root) * 4);
-}
-
-.margin-bottom-5 {
-	margin-bottom: calc(var(--margin-root) * 5);
-}
-
-.margin-bottom-10 {
-	margin-bottom: calc(var(--margin-root) * 10);
-}
-
-.margin-top-1 {
-	margin-top: calc(var(--margin-root) * 1);
-}
-
-.margin-top-2 {
-	margin-top: calc(var(--margin-root) * 2);
-}
-
-.margin-top-3 {
-	margin-top: calc(var(--margin-root) * 3);
-}
-
-.margin-top-4 {
-	margin-top: calc(var(--margin-root) * 4);
-}
-
-.margin-top-5 {
-	margin-top: calc(var(--margin-root) * 5);
-}
-
-.margin-top-10 {
-	margin-top: calc(var(--margin-root) * 10);
-}
-
-.margin-bottom-10 {
-	margin-bottom: calc(var(--margin-root) * 10);
-}
-
-.padding-1 {
-	padding: calc(var(--margin-root) * 1);
-}
-
-.padding-2 {
-	padding: calc(var(--margin-root) * 2);
-}
-
-.padding-3 {
-	padding: calc(var(--margin-root) * 3);
-}
-
-.padding-4 {
-	padding: calc(var(--margin-root) * 4);
-}
-
-.padding-5 {
-	padding: calc(var(--margin-root) * 5);
-}
-
-.padding-10 {
-	padding: calc(var(--margin-root) * 10);
-}
-
-.padding-bottom-1 {
-	padding-bottom: calc(var(--margin-root) * 1);
-}
-
-.padding-bottom-2 {
-	padding-bottom: calc(var(--margin-root) * 2);
-}
-
-.padding-bottom-3 {
-	padding-bottom: calc(var(--margin-root) * 3);
-}
-
-.padding-bottom-4 {
-	padding-bottom: calc(var(--margin-root) * 4);
-}
-
-.padding-bottom-5 {
-	padding-bottom: calc(var(--margin-root) * 5);
-}
-
-.padding-bottom-10 {
-	padding-bottom: calc(var(--margin-root) * 10);
-}
-
-
-/*margins-paddings-end*/
 
 
 /*navbar*/
@@ -371,7 +240,8 @@ h2 {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	min-height: 600px;
+	height: 70vh;
+	min-height: 300px;
 	background: url("../img/hero-bg.png") no-repeat fixed;
 }
 
@@ -395,14 +265,13 @@ h2 {
 
 .color-radio_container {
     display: inline-flex;
-    height: 30px;
-	width: 30px;
+    height: 32px;
+	width: 32px;
     position: relative;
-    padding: 0;
-    vertical-align: middle;
+	padding: 0;
 	margin: 1px;
+    vertical-align: middle;
 	cursor: pointer;
-    font-size: 1px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -419,12 +288,13 @@ h2 {
 
 .checkmark {
 	position: absolute;
-	left: 0;
 	height: 32px;
 	width: 32px;
 	border: 0;
 	border-radius: 50%;
 	opacity: 0.3;
+	font-size: 1px;
+	line-height: 1px;
 }
 
 .input-radio {
