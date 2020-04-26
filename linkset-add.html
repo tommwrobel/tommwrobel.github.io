@@ -50,20 +50,23 @@
                 </div>
                 <div class="links-wrapper">
 
-                <div class="link-container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-4 col-12">
-                            <label for="linkUrl">#1 Link URL:</label>
-                            <input type="text" name="linkUrl"/>
+                    <div class="link-container">
+
+                        <!--navigation+close buttons-->
+                        <div class="link-container-buttons">
+                            <a class="btn-icon btn-red remove_field_button"><img src="img/x.svg" alt="x"/></a>
                         </div>
 
-                        <div class="col-xl-6 col-lg-8 col-12 link-options">
+                        
+                        <div class="row">
+                            <div class="col-12 col-md-7">
+                                <label for="linkUrl">#1 Link URL:</label>
+                                <input type="text" name="linkUrl"/>
+                            </div>
 
-                                                 
-                            <div class="input-radio">
+                            <div class="col-12 col-md-5">
                                 <label for="linkUrl">Link label (optional):</label>
-                                
-                                <div class="inside">
+                                <div class="link-label-color-options">
                                     <label class="color-radio_container">
                                         <input type="radio" checked="checked" name="label-color" class="bg-green">
                                         <span class="checkmark bg-green"></span>
@@ -79,20 +82,14 @@
                                 </div>
                                 <input type="text" name="linkLabel"/>
                             </div>
-                        
-                            <div class="options">
-                                <a class="btn-icon btn-primary up_button"><img src="img/arrow-up.svg" alt="&uarr;"/></a><a class="btn-icon btn-primary down_button"><img src="img/arrow-down.svg" alt="&darr;"/></a><a class="btn-icon btn-red remove_field_button"><img src="img/x.svg" alt="x"/></a>
-                            </div>
-                        
                         </div>
-
                     </div>
-                </div>
 
                 </div>
 
                 <div class="link-container add-link-button">
-                    Add one more link
+                    <img src="img/plus.svg" alt="" />
+                    <span>Add one more link</span>
                 </div>
 
                 <div class="row txt-center margin-top-5">

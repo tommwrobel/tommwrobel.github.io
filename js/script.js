@@ -13,20 +13,8 @@ $(document).ready(function() {
 	});
 
 	$(wrapper).on("click",".remove_field_button", function(e){
-		e.preventDefault(); $(this).parent('div').parent('div').parent('div').parent('div').remove(); x--;
+		e.preventDefault(); $(this).parent('div').parent('div').remove(); x--;
     });
-    
-    $(wrapper).on("click",".up_button", function(e){
-        e.preventDefault(); 
-        var wrapper = $(this).parent('div').parent('div').parent('div').parent('div').closest('div');
-        wrapper.insertBefore(wrapper.prev());
-    });
-    
-    $(wrapper).on("click",".down_button", function(e){
-        e.preventDefault(); 
-        var wrapper = $(this).parent('div').parent('div').parent('div').parent('div').closest('div');
-        wrapper.insertAfter(wrapper.next());
-	});
 
 
 

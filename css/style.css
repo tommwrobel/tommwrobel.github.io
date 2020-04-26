@@ -12,6 +12,7 @@
     --dark-red: #e5424a;
 	--yellow: #FCC75C;
 	--green: #08C8A0;
+	--light-green: #ecfffd;
 	--margin-root: 5px;
 }
 
@@ -66,22 +67,16 @@ body {
 .btn-icon {
     cursor: pointer;
     text-align: center;
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     text-decoration: none;
-    justify-content: center;
-    display: inline-flex;
+    display: inline-block;
     align-items: center;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
     border: solid 2px var(--primary-color);
-    margin-right: 3px;
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-.btn-icon:last-child {
-    margin-right: 0;
 }
 
 .btn-primary {
@@ -476,22 +471,6 @@ label {
     padding-left: 12px;
     margin: 10px 0 5px 0;
 }
-
-.link-options {
-	display: flex;
-}
-
-.input-radio {
-	width: 100%;
-	flex: 1;
-	display: block;
-}
-
-.options {
-	margin-top: 48px;
-	margin-left: 30px;
-}
-
 /*form-end*/
 
 
@@ -542,24 +521,60 @@ hr {
     border: dashed 1px var(--light-gray);
     border-radius: 12px;
     padding: 15px 25px 25px 25px;
-    margin: 10px 0;
+	margin: 10px 0;
+	display: block;
+	position: relative;
+}
+
+.link-container-buttons {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	z-index: 1200;
+}
+
+.link-container-buttons a {
+	margin-left: 2px;
+}
+
+.link-label-color-options {
+	position: absolute;
+	top: 46px;
+	right: 28px;
+}
+
+.link-label-color-options ~ input {
+	padding-right: 130px;
+}
+
+.link-container label {
+	position: relative;
+	z-index: 1;
 }
 
 .add-link-button {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+	display: flex;
+	align-items: center;
 	cursor: pointer;
-    padding: 20px;
+	padding: 20px;
     font-weight: bold;
-    color: var(--gray);
-    text-align: center;
+    color: var(--green);
+	text-align: center;
+	border-color: var(--green);
+    justify-content: center;
+}
+
+.add-link-button img {
+	display: inline;
+	margin-right: 5px;
 }
 
 .add-link-button:hover {
-	cursor: pointer;
-    padding: 20px;
-    font-weight: bold;
-    color: var(--green);
-    border-color: var(--green);
-    text-align: center;
+	background-color: var(--light-green);
 }
 
 /*subpage-content-end*/
