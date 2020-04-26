@@ -448,3 +448,12 @@ hr {
 }
 
 /*subpage-content-end*/
+
+/*login*/
+
+#login .container {
+	max-width: 500px;
+}
+
+
+/*login=end*/
