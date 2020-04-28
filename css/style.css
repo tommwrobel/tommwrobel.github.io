@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
 :root {
 	--primary-color: #2C1DC4;
 	--primary-color-dark: #1D109E;
@@ -471,5 +472,64 @@ hr {
 	max-width: 500px;
 }
 
-
 /*login=end*/
+
+/*linkset*/
+.linkset {
+	border: solid 1px var(--light-gray);
+	border-radius: 12px;
+	display: flex;
+	align-items: center;       /* new */
+	  justify-content: center; 
+	  margin-bottom: var(--margin-root);
+}
+
+#linkset-list > .linkset:last-child{
+	margin-bottom: 0;
+}
+
+.linkset:hover {
+	border-color: var(--secondary-color);
+}
+
+.linkset-options {
+	margin-left: auto;
+	align-content: left;
+	align-items: center;
+  justify-content: center;
+
+}
+
+.linkset .linkset-number {
+	font-weight: bold;
+	color: var(--gray);
+}
+
+.linkset:hover .linkset-number {
+	color: var(--secondary-color);
+}
+
+.linkset .linkset-name {
+	font-weight: bold;
+}
+
+.linkset .linkset-author {
+	font-size: 0.9rem;
+}
+
+.linkset .number-of-links {
+	font-weight: bold;
+	font-size: 0.95rem;
+	color: var(--primary-color);
+}
+
+.share-link div {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background: url("../img/share-icon.svg") no-repeat center center;
+}
+
+.share-link:hover div {
+	background: url("../img/share-icon-hover.svg") no-repeat center center;
+}

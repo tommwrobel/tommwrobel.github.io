@@ -32,6 +32,22 @@ $(document).ready(function() {
         });
     });
 
+    //search
+    
+    /*var sic = $('#search-results');
+    $('#search').on('input', function() {
+        
+        sic.empty();
+        var keyword = $('#search').val();
+        
+        $(".item:contains('" + keyword + "')").each(function() {
+            
+            sic.append("asdf");
+        });
+
+         
 
 
+    });
+    */
 });
