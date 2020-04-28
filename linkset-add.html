@@ -1,132 +1,134 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <title>Linkset - Add new linkset.</title>
-    <meta name="description" content="Share links with co-workers simple and effective way.">
-    <meta name="author" content="Tomasz Wróbel">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Linkset - Add new linkset.</title>
+  <meta name="description" content="Share links with co-workers simple and effective way.">
+  <meta name="author" content="Tomasz Wróbel">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    
-    <link rel="stylesheet" href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" rel="stylesheet">
- </head>
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+  <link rel="stylesheet" href="css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" rel="stylesheet">
+</head>
 
 <body>
 
-    <!--navigation-->
-    <section id="navbar" class="bg-primary">
-        <div class="container">
-            <div class="row px-3">
-                <nav class="navbar" role="navigation" aria-label="main navigation">
-                    <div class="navbar-brand">
-                        <a href="index.html">
-                            <img src="img/linkset-logo.svg" alt="logo"/>
-                        </a>
-                    </div>
-                    <div class="navbar-links">
-                        <a class="btn btn-tertiary color-white" href="index.html#about-project-anchor">About</a>
-                        <a class="btn btn-tertiary color-white" href="index.html#contact-me-anchor">Contact</a>
-                    </div>
-                </nav>
-            </div>
+  <!--navigation-->
+  <section id="navbar" class="bg-primary">
+    <div class="container">
+      <div class="row px-3">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a href="index.html">
+              <img src="img/linkset-logo.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="navbar-links">
+            <a class="btn btn-tertiary color-white" href="index.html#about-project-anchor">About</a>
+            <a class="btn btn-tertiary color-white" href="index.html#contact-me-anchor">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <!--navigation-end-->
+
+  <!--content-->
+  <section class="subpage-content pb-4">
+    <div class="container py-5 px-3 px-sm-5">
+
+      <div class="row mb-4">
+        <div class="col-12 col-s-6 col-lg-8 my-auto">
+          <h2 class="text-md-center">Create new Linkset</h2>
         </div>
-    </section>
-     <!--navigation-end-->
+      </div>
 
-   <!--content-->
-   <section class="subpage-content pb-4">
-        <div class="container py-5 px-3 px-sm-5">
+      <!--template-->
+      <div id="link-container-template" class="d-none">
+        <div class="link-container">
 
-            <div class="row mb-4">
-                <div class="col-12 col-s-6 col-lg-8 my-auto">
-                    <h2 class="text-md-center">Create new Linkset</h2>
-                </div>
+          <div class="link-container-buttons">
+            <a class="btn-icon btn-red remove_field_button"><img src="img/x.svg" alt="x" /></a>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <label for="linkUrl">#<span class="link-number">0</span> Link URL:</label>
+              <input type="text" name="linkUrl" />
+              <!--<span class="label-error">Unproper link format!</span>-->
             </div>
 
-             <!--template-->
-            <div id="link-container-template" class="d-none">
-                <div class="link-container">
-
-                    <div class="link-container-buttons">
-                        <a class="btn-icon btn-red remove_field_button"><img src="img/x.svg" alt="x"/></a>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 col-md-7">
-                            <label for="linkUrl">#<span class="link-number">0</span> Link URL:</label>
-                            <input type="text" name="linkUrl"/>
-                            <!--<span class="label-error">Unproper link format!</span>-->
-                        </div>
-
-                        <div class="col-12 col-md-5">
-                            <label for="linkUrl">Link label <span class="label-info">(optional)</span>:</label>
-                            <div class="link-label-color-options">
-                                <label class="color-radio_container">
-                                    <input type="radio" checked="checked" name="col0" class="color-radio-input bg-green">
-                                    <span class="checkmark bg-green"></span>
-                                </label><label class="color-radio_container">
-                                    <input type="radio" name="col0" class="color-radio-input bg-yellow">
-                                    <span class="checkmark bg-yellow"></span>
-                                </label><label class="color-radio_container">
-                                    <input type="radio" name="col0" class="color-radio-input  bg-red">
-                                    <span class="checkmark bg-red"></span>
-                                </label>
-                            </div>
-                            <input type="text" name="linkLabel"/>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 col-md-5">
+              <label for="linkUrl">Link label <span class="label-info">(optional)</span>:</label>
+              <div class="link-label-color-options">
+                <label class="color-radio_container">
+                  <input type="radio" checked="checked" name="col0" class="color-radio-input bg-green">
+                  <span class="checkmark bg-green"></span>
+                </label><label class="color-radio_container">
+                  <input type="radio" name="col0" class="color-radio-input bg-yellow">
+                  <span class="checkmark bg-yellow"></span>
+                </label><label class="color-radio_container">
+                  <input type="radio" name="col0" class="color-radio-input  bg-red">
+                  <span class="checkmark bg-red"></span>
+                </label>
+              </div>
+              <input type="text" name="linkLabel" />
             </div>
-
-
-            <form>
-                <div class="linkset-container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <label for="linksetName">Linkset name:</label>
-                            <input type="text" name="linksetName" />
-                        </div>
-                        <div class="col-md-4">
-                            <label for="linksetName">Author's name:</label>
-                            <input type="text" name="userName" />
-                        </div>
-                    </div>
-                </div>
-                <div class="links-wrapper">
-
-                    
-
-                </div>
-
-                <div class="link-container add-link-button">
-                    <img src="img/plus.svg" alt="" />
-                    <span>Add link</span>
-                </div>
-
-                <div class="row txt-center mt-5">
-                    <div class="col">
-                        <input type="submit" class="btn btn-primary" value="Create Linkset!" />
-                    </div>
-                </div>
-            </form>
-    </section>
-    <!--content-end-->
-
-    <!--footer-->
-    <section id="footer" class="txt-center">
-        <div class="container">
-            <span>Copyright &copy; 2020 by Linkset.</span>
+          </div>
         </div>
-    </section>
-    <!--footer-end-->
+      </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
-    <script src="js/script.js" type="text/javascript"></script>
+      <form>
+        <div class="linkset-container">
+          <div class="row">
+            <div class="col-md-8">
+              <label for="linksetName">Linkset name:</label>
+              <input type="text" name="linksetName" />
+            </div>
+            <div class="col-md-4">
+              <label for="linksetName">Author's name:</label>
+              <input type="text" name="userName" />
+            </div>
+          </div>
+        </div>
+        <div class="links-wrapper">
+
+
+
+        </div>
+
+        <div class="link-container add-link-button">
+          <img src="img/plus.svg" alt="" />
+          <span>Add link</span>
+        </div>
+
+        <div class="row txt-center mt-5">
+          <div class="col">
+            <input type="submit" class="btn btn-primary" value="Create Linkset!" />
+          </div>
+        </div>
+      </form>
+  </section>
+  <!--content-end-->
+
+  <!--footer-->
+  <section id="footer" class="txt-center">
+    <div class="container">
+      <span>Copyright &copy; 2020 by Linkset.</span>
+    </div>
+  </section>
+  <!--footer-end-->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+  <script src="js/script.js" type="text/javascript"></script>
 </body>
+
 </html>
