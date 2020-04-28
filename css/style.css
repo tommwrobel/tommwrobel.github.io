@@ -154,6 +154,10 @@ h2 {
 	font-size: 1.5rem;
 }
 
+.lead-s {
+	font-size: 1.1rem;
+}
+
 .bg-primary {
 	background-color: var(--primary-color);
 }
@@ -339,7 +343,19 @@ label {
     font-weight: bold;
     display: block;
     padding-left: 12px;
-    margin: 10px 0 5px 0;
+	margin: 10px 0 5px 0;
+}
+
+.label-info {
+	font-weight: normal;
+}
+
+.label-error {
+	color: var(--dark-red);
+	font-weight: normal;	
+	text-align: right;
+	display: inline-block;
+	float: right;
 }
 /*form-end*/
 
